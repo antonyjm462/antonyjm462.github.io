@@ -1,0 +1,71 @@
+//variables
+@import '../../../assets/scss/modules/variables';
+h3::after {
+    margin-left: 320px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 12px;
+    color: $lightSlate;
+    margin: 0;
+    padding: 0;
+}
+
+.tab {
+    outline: 0px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    height: 50px;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    padding: 0px 20px 2px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    border-left: 2px solid rgb(48, 60, 85);
+}
+
+.slate {
+    border-left: 2px solid $lightSlate;
+}
+
+.green {
+    border-left: 2px solid $green;
+    background-color: $lightNavy;
+}
+
+.tab:hover {
+    background-color: $lightNavy;
+}
+
+.tab>span {
+    text-align: left;
+    white-space: nowrap;
+    font-family: $mono;
+    color: $green;
+    font-size: large;
+    padding: 0px 30px;
+}
+
+.margin {
+    display: block;
+    width: 2px;
+    height: 42px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    transform: translateY(84px);
+    background: rgb(100, 255, 218);
+    border-radius: 3px;
+    transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+}

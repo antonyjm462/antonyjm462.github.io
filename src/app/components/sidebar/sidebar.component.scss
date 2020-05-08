@@ -1,0 +1,36 @@
+//variables
+@import '../../../assets/scss/modules/variables';
+// side
+.sidenav {
+    height: auto;
+    width: 50px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    margin: 10px;
+    padding: 0;
+    margin-top: 20px;
+    overflow-x: hidden;
+}
+
+.icon {
+    color: $slate;
+    padding: 15px 15px;
+}
+
+.icon:hover {
+    color: $green;
+}
+
+.sidenav a {
+    color: $slate;
+    display: block;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+}

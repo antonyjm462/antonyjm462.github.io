@@ -1,0 +1,71 @@
+//variables
+@import '../../../assets/scss/modules/variables';
+.container-fluid {
+    margin-top: 50px;
+}
+
+.about-content {
+    padding: 10px 170px;
+}
+
+.icon {
+    display: inline-block;
+    width: 340px;
+    height: 340px;
+    background-size: cover;
+}
+
+//tint
+.image-holder {
+    height: 340px;
+    width: 338px;
+    position: relative;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.image-holder:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 255, 255, 0.466);
+    transition: all .3s linear;
+    border-radius: 10px;
+}
+
+.image-holder:hover:before {
+    background: none;
+}
+
+.Work {
+    padding-bottom: 70px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.skills {
+    display: block;
+}
+
+.dev-icon>li {
+    padding-left: 0;
+    list-style: none;
+}
+
+.chart {
+    color: $green;
+}
+
+canvas {
+    display: block;
+    width: 1000px;
+    height: 1000px;
+}

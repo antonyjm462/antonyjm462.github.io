@@ -1,0 +1,29 @@
+//variables
+@import '../../../assets/scss/modules/variables';
+.intro {
+    color: $lightSlate;
+    padding: 10% 10%;
+}
+
+.intro>h1 {
+    font-weight: $bold;
+    color: $lightestSlate;
+    padding: 0px;
+    font-size: 4rem;
+}
+
+.intro>h2 {
+    font-weight: $bold;
+    color: $lightSlate;
+    padding-bottom: 20px;
+}
+
+.intro>h6 {
+    font-family: $mono;
+    color: $green;
+    font-size: medium;
+}
+
+.intro>.desc {
+    color: $slate;
+}

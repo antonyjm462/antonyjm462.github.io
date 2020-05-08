@@ -1,4 +1,14 @@
 # Portfolio
+@Component({
+  selector: 'app',
+  template: `
+    <div class="my-icon" aria-label="My icon" [inlineSVG]="'/img/image.svg'"></div>
+  `
+})
+
+I’ll be generating @font-face for the following fonts, ignoring the italic versions. If I have to make a font italic, I’ll be using the font-style: italic;.
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.7.
 

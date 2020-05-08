@@ -1,0 +1,14 @@
+<div class="info-container">
+    <h4> <span class="role">{{job.role}}</span> <span class="organistion"> @ {{job.organistion_name}}</span></h4>
+    <h5> {{job.start_date}} - {{job.end_date}}</h5>
+    <div>
+        <ul class="job-group" *ngFor="let work of job.workdone">
+            <li class="job-item">{{work}}</li>
+        </ul>
+        <h5> Projects </h5>
+        <ul class="job-group" *ngFor="let project of job.projects">
+            <li class="job-item">{{project}}</li>
+        </ul>
+    </div>
+
+</div>

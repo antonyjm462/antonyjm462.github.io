@@ -1,0 +1,34 @@
+<div class="project-container up">
+    <div class="project-content">
+        <div class="top-content row justify-content-between">
+            <div class="col-9">
+                <div class="folder-icon" aria-label="icon" [inlineSVG]="'../../../assets/icons/folder-regular.svg'"></div>
+            </div>
+            <div class="col-3">
+                <div class="row justify-content-end">
+                    <div class="col-6">
+                        <a href={{project.github}}>
+                            <div class="icon" aria-label="icon" [inlineSVG]="'../../../assets/icons/github-brands.svg'"></div>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href={{project.web}}>
+                            <div class="icon" aria-label="icon" [inlineSVG]="'../../../assets/icons/link-solid.svg'"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-head">
+            <h4>{{project.project_name}}</h4>
+        </div>
+        <div class="content-text">
+            <p>{{project.project_data}}</p>
+        </div>
+        <ul class="content-footer">
+            <li class="depend" *ngFor="let item of project.dependency">
+                {{item}}
+            </li>
+        </ul>
+    </div>
+</div>

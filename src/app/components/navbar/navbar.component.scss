@@ -1,0 +1,18 @@
+//variables
+@import '../../../assets/scss/modules/variables';
+//style
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+.navbar-brand {
+    padding: 10px;
+}
+
+.nav-link {
+    font-family: $mono;
+    margin-left: 20px;
+    font-size: medium;
+    text-decoration: none;
+}

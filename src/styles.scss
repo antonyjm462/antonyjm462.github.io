@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+//Bootstrap
+@import "~bootstrap/dist/css/bootstrap.css";
+// Fonts
+@import 'assets/scss/modules/_fonts.scss';
+//spinner
+@import 'assets/scss/modules/_spinner.scss';
+//variables
+@import "assets/scss/modules/_variables.scss";
+body {
+    background-color: $DARK_BG;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $primary_font;
+    font-size: $primary-fs;
+    font-weight: $regular;
+    color: $white;
+    counter-reset: my-sec-counter;
+}
+
+h3::before {
+    counter-increment: my-sec-counter;
+    content: "0"counter(my-sec-counter) ". ";
+    color: $green;
+    font-family: $mono;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-weight: $bold;
+    color: $lightSlate;
+    padding-bottom: 5%;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 300px;
+    background-color: $lightestNavy;
+    position: relative;
+    top: -15px;
+    margin-left: 200px;
+}
+
+.btn-ajm {
+    font-family: $mono;
+    font-size: small;
+    color: $green;
+    padding: 10px;
+}
+
+section {
+    padding-bottom: 150px;
+}
+
+.up:hover {
+    -webkit-animation: action 1s infinite alternate;
+    animation: action 1s infinite alternate;
+}
+
+@-webkit-keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}

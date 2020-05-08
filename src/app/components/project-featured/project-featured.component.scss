@@ -1,0 +1,100 @@
+//variables
+@import '../../../assets/scss/modules/variables';
+.project-container {}
+
+.image-holder {
+    height: 350px;
+    width: 600px;
+    position: relative;
+    margin: 20px
+}
+
+button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.content-text,
+.content-footer,
+.content-head {
+    text-align: right;
+}
+
+img {
+    border-radius: 10px;
+    height: 350px;
+    width: 600px;
+    padding: 10px;
+}
+
+.image-holder:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 255, 255, 0.466);
+    transition: all .3s linear;
+    border-radius: 10px;
+}
+
+.image-holder:hover:before {
+    background: none;
+}
+
+.icon {
+    color: $slate;
+    height: 25px;
+    width: 25px;
+}
+
+.icon:hover {
+    color: $green;
+}
+
+.content-head {
+    font-size: 22px;
+    color: $lightestSlate;
+    margin: 0px 0px 10px;
+    font-weight: $bold;
+}
+
+.content-text,
+.content-footer {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    font-family: $mono;
+    font-size: 17px;
+    color: $lightSlate;
+    margin: 0px 0px 15px;
+}
+
+ul {
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    list-style: none;
+}
+
+li {
+    font-size: 12px;
+    color: $lightSlate;
+    line-height: 1.75;
+    margin-right: 15px;
+}
+
+.featured {
+    font-size: small;
+    font-family: $mono;
+    color: $green;
+}

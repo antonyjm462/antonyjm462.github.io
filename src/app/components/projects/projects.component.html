@@ -1,0 +1,29 @@
+<section id="featured">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="jobs">
+                <h3>Some Things I've Built</h3>
+                <div class="featured-grid" *ngFor="let project of projects">
+                    <div *ngIf="project.featured">
+                        <app-project-featured [project]='project'></app-project-featured>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="project">
+                <h3>Other Noteworthy Projects</h3>
+            </div>
+            <div class="grid" *ngFor="let project of projects">
+                <div *ngIf="! project.featured">
+                    <app-project [project]='project'></app-project>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

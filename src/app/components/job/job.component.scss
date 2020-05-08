@@ -1,0 +1,60 @@
+//variables
+@import '../../../assets/scss/modules/variables';
+.info-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 12px;
+    padding-left: 30px;
+}
+
+.info-container>h4 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.info-container>h4>.role {
+    color: $slate;
+}
+
+.info-container>h4>.organistion {
+    color: $green;
+}
+
+.info-container>h5 {
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    color: rgb(168, 178, 209);
+    margin-bottom: 30px;
+}
+
+h5 {
+    padding: 15px 0px;
+    font-family: $mono;
+    color: $green;
+}
+
+ul {
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    -webkit-font-smoothing: antialiased;
+    color: $lightSlate;
+    line-height: 1.3;
+}
+
+li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: $green;
+}
+
+li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}

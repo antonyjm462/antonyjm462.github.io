@@ -1,0 +1,34 @@
+//variables
+@import '../../../assets/scss/modules/variables';
+table.darkTable {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    border-collapse: collapse;
+    top: 0;
+    font-family: $mono;
+}
+
+h3::after {
+    margin-left: 320px;
+}
+
+table.darkTable td {
+    padding: 10px 10px;
+    color: $slate;
+}
+
+table.darkTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    color: $green;
+}
+
+table.darkTable tr:hover {
+    background-color: $lightNavy;
+}
+
+table.darkTable td:hover {
+    color: $green
+}

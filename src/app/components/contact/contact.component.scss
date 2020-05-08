@@ -1,0 +1,19 @@
+//variables
+@import '../../../assets/scss/modules/variables';
+.contact-text {
+    color: $lightSlate;
+    padding-bottom: 50px;
+}
+
+.contact-text>h1 {
+    font-weight: $bold;
+    padding-bottom: 20px;
+}
+
+.contact-text>p {
+    padding: 15px 200px;
+}
+
+.contact-btn {
+    color: $green;
+}

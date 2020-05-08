@@ -1,0 +1,49 @@
+<section id="about">
+    <div class="container-fluid row justify-content-center">
+        <div class="row about-content">
+            <div class="col-8">
+                <h3>About Me</h3>
+                <div class="desc">
+                    {{desc}}
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="image-holder">
+                    <img src="../../../assets/img/photo.svg" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="WorkDescription">
+    <div class="container heading">
+        <div class="row content">
+            <div class="col-6 chart">
+                <canvas baseChart [datasets]="radarChartData" [labels]="radarChartLabels" [chartType]="radarChartType" [options]="radarOptions"></canvas>
+            </div>
+            <div class="col-6 Work">
+                <h3>What I Do</h3>
+                <div class="dev-text">
+                    <ul class="sub-text">
+                        <li class="text" *ngFor="let text of skilltexts">{{text}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skill">
+    <div class="container heading">
+        <div class="row content">
+            <h3>Crazy Full Stack Developer Who Want To Explore Every Tech Stack</h3>
+            <div class="dev-text">
+                <ul class="sub-text">
+                    <li class="text" *ngFor="let text of skilltexts">{{text}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
