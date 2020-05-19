@@ -36,13 +36,70 @@
 </section>
 
 <section id="skill">
-    <div class="container heading">
-        <div class="row content">
-            <h3>Crazy Full Stack Developer Who Want To Explore Every Tech Stack</h3>
-            <div class="dev-text">
-                <ul class="sub-text">
-                    <li class="text" *ngFor="let text of skilltexts">{{text}}</li>
-                </ul>
+    <div class="container heading rowjustify-content-between">
+        <h3 class="stack">Crazy Full Stack Developer Who Want To Explore Every Tech Stack</h3>
+        <div class="dev-text content">
+            <div class="row skill-set">
+                <div class="col-2 align-items-center">
+                    <h2> Languages </h2>
+                </div>
+                <div class="col-10 align-items-center align-content-between">
+                    <div class="icon" *ngFor="let skill of languageShow">
+                        <img class="icon" src="{{skill}}" alt="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="row skill-set">
+                <div class="col-2 align-items-center">
+                    <h2> Database </h2>
+                </div>
+                <div class="col-10 align-items-center align-content-between">
+                    <div class="icon" *ngFor="let skill of database">
+                        <img class="icon" src="{{skill}}" alt="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="row skill-set">
+                <div class="col-2 align-items-center">
+                    <h2> Os </h2>
+                </div>
+                <div class="col-10 align-items-center align-content-between">
+                    <div class="icon" *ngFor="let skill of os">
+                        <img class="icon" src="{{skill}}" alt="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="row skill-set">
+                <div class="col-2 align-items-center">
+                    <h2> FrameWork </h2>
+                </div>
+                <div class="col-10 align-items-center align-content-between">
+                    <div class="icon" *ngFor="let skill of framework">
+                        <img class="icon" src="{{skill}}" alt="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="row skill-set">
+                <div class="col-2 align-items-center">
+                    <h2> Application </h2>
+                </div>
+                <div class="col-10 align-items-center align-content-between">
+                    <div class="icon" *ngFor="let skill of application">
+                        <img class="icon" src="{{skill}}" alt="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="row skill-set">
+                <div class="col-2 align-items-center">
+                    <h2> Technology </h2>
+                </div>
+                <div class="col-10 align-items-center align-content-between">
+                    <div class="row justify-content-between">
+                        <div class="col-1" *ngFor="let skill of tech">
+                            <p class="lead">{{skill}}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

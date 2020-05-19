@@ -14,12 +14,19 @@ export class AboutComponent implements OnInit {
   radarChartLabels: string[];
   radarChartData: { data: number[]; label: string; }[];
   radarOptions: any;
+  application: any;
+  tech: any;
+  framework: any;
+  os: any;
+  database: any;
+  languages: any;
+  languageShow: any;
   
 
   constructor(public about: AboutService) {
     this.skilltexts = about.skillText;
     this.desc = about.about_me;
-    this.radarChartLabels = about.skills["language"].list;
+    this.radarChartLabels = about.skills["language"].list_data;
     this.radarChartData = about.skills["language"].data;
     this.radarOptions = {
     responsive : true,
@@ -55,6 +62,22 @@ export class AboutComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.languages = this.about.skills["language"].list;
+    this.languageShow = this.makepath(this.languages);
+    this.database = this.makepath(this.about.skills["database"].list);
+    this.os = this.makepath(this.about.skills["os"].list);
+    this.framework = this.makepath(this.about.skills["framework"].list);
+    this.tech = this.about.skills["tech"].list;
+    this.application = this.makepath(this.about.skills["application"].list);
+    console.log(this.radarChartLabels);
+  }
+
+  makepath(data){
+    let list = data;
+    for(let i=0;i<list.length;i++){
+      list[i] = `../../../assets/icons/skill/${list[i]}.svg`;
+    }
+    return list;
   }
 
 }

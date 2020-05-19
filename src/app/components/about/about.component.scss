@@ -8,13 +8,6 @@
     padding: 10px 170px;
 }
 
-.icon {
-    display: inline-block;
-    width: 340px;
-    height: 340px;
-    background-size: cover;
-}
-
 //tint
 .image-holder {
     height: 340px;
@@ -68,4 +61,36 @@ canvas {
     display: block;
     width: 1000px;
     height: 1000px;
+}
+
+.stack::after {
+    content: none;
+}
+
+h2 {
+    color: #64ffda;
+    font-family: "IBM Plex Mono";
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.sub-skill {
+    text-align: center;
+}
+
+.icon {
+    display: inline-block;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin: 10px 20px;
+    position: relative;
+}
+
+.icon-text {
+    color: $slate;
+}
+
+.skill-set {
+    padding: 20px;
 }

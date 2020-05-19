@@ -46,7 +46,8 @@ const COMPONENTS = [
 
 const PIPES = [];
 
-const SERVICES = [];
+const SERVICES = [
+];
 
 const MODULES = [
   BrowserModule,
@@ -55,8 +56,12 @@ const MODULES = [
   ChartsModule,
   InlineSVGModule.forRoot()
 ];
+
+const DIRECTIVES = [
+  ChangeImgDirective,
+]
 @NgModule({
-  declarations: [...COMPONENTS, ...PIPES, ...SERVICES, ChangeImgDirective],
+  declarations: [...COMPONENTS, ...PIPES, ...SERVICES,...DIRECTIVES],
   imports: [...MODULES],
   exports: [],
   providers: [],

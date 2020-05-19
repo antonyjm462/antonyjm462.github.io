@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class AboutService {
   imgVal: number = 1;
-
+  
   public jobs: any[] = [
     {
       organistion_name: "Wiinnova Software Labs",
@@ -43,23 +43,28 @@ export class AboutService {
 
   public skillText: any[] = [
     `⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications`,
-    `⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks`,
-    `⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean`,
+    `⚡ Progressive Web Applications ( PWA ) in Angular`,
+    `⚡ Experienced in making Cross-Platform Apps Ionic FrameWorks`,
+    `⚡ REST API creating using Google Cloud Functions`,
+    `⚡ Creating Backend With Python Django FrameWork`,
+    `⚡ Solid live project experience on Google Home Application development`,
+    `⚡ Experienced in making ML and DL Models`,
   ]
 
 
   public skills: any = {
     language:{
-      list:["Python","C","JavaScript","TypeScript","Java","HTML","CSS","PHP"],
+      list:["Python","C","JavaScript","TypeScript","Java","HTML","CSS","PHP","Ruby"],
+      list_data:["Python","C","JavaScript","TypeScript","Java","HTML","CSS","PHP","Ruby"],
       data:[
-        {data: [40,0,0,0,0,50,40,40], label: '2017'},
-        {data: [80,60,0,0,40,60,60,60], label: '2018'},
-        {data: [80,80,40,40,50,70,50,60], label: '2019'},
-        {data: [90,80,60,80,80,80,80,60], label: '2020'}
+        {data: [40,0,0,0,0,50,40,40,0], label: '2017'},
+        {data: [80,60,0,0,40,60,60,60,0], label: '2018'},
+        {data: [80,80,40,40,50,70,50,60,0], label: '2019'},
+        {data: [90,80,60,80,80,80,80,60,50], label: '2020'}
       ]
     },
     database:{
-      list:["MySql/MariaDB","MongoDB","OracleDB"]
+      list:["MySql","MongoDB","OracleDB"]
     },
     os:{
       list:["Windows","Linux"]
@@ -71,7 +76,7 @@ export class AboutService {
       list:["Machine Learning","Deep learning",   "Blockchain",    "IOT",    "Web Development",    "UI Design"        ,"Ethical Hacking"]
     }, 
     application: {
-      list:["Firebase",    "Dialogflow",    "Actions on Google", "Cloud Functions",    "Git",    "GitHub",    "Bootstrap"]
+      list:["Firebase", "Actions on Google", "Cloud Functions",    "Git",    "GitHub",    "Bootstrap"]
     },
   }
   public projects: any[] = [
@@ -85,8 +90,8 @@ export class AboutService {
           * Quiz Questions Database 
           * User management 
           * Backend logic `,
-      dependency: ["Next.js","Chart.js"],
-      web: "assfvsfdv",
+      dependency: ["Firebase","Google Actions","DialogFlow","Google Cloud Functions"],
+      web: "https://antonyjm462.github.io/LetzQuiz/",
       github: "https://github.com/antonyjm462/LetzQuiz",
       img: "../../../assets/project-img/Libma/"
     },
@@ -94,8 +99,8 @@ export class AboutService {
       project_name: "Fixel",
       featured: true,
       project_data: `A Deep learning project which targets improving the camera quality for budget phones, the Fixel app provides the user capability to capture images through Fixel App made of Ionic and sent captured image to web API. The Fixel Web Api Is bundled with ProSR GAN for converting low-resolution images to high-resolution images.`,
-      dependency: ["Next.js","Chart.js"],
-      web: "assfvsfdv",
+      dependency: ["Ionic","Django","Google Cloud Functions","Firebase","ProSR GAN"],
+      web: "#",
       github: "https://github.com/antonyjm462/Fixel",
       img: "../../../assets/project-img/Libma/"
     },
@@ -111,8 +116,8 @@ export class AboutService {
       management in a single App. 
       Firebase used as the database and Ionic
       as front end Tool.`,
-      dependency: ["Next.js","Chart.js"],
-      web: "assfvsfdv",
+      dependency: ["Ionic","Firebase","QR Code"],
+      web: "https://libma-rset.firebaseapp.com/",
       github: "https://github.com/antonyjm462/Libma",
       img: `../../../assets/project-img/Libma/`
     },
@@ -129,8 +134,8 @@ export class AboutService {
       MySql and used PHP REST API
        to interface
       with the database and front end.`,
-      dependency: ["Next.js","Chart.js"],
-      web: "assfvsfdv",
+      dependency: ["Angular","MySQL","PHP"],
+      web: "#",
       github: "https://github.com/antonyjm462/DoStuff",
       img: "../../../assets/project-img/Libma/"
     },
@@ -139,8 +144,8 @@ export class AboutService {
       featured: false,
       project_data: `A Machine Learning Web Application for Smart Stock Purchase and Provide a dashboard for each user to save his preferences. Built using Django
       Framework, Database used in SQLite`,
-      dependency: ["Next.js","Chart.js"],
-      web: "assfvsfdv",
+      dependency: ["Django","Chart.js","Keras"],
+      web: "#",
       github: "https://github.com/antonyjm462/stockify",
       img: "assest/image/"
     },
@@ -148,8 +153,8 @@ export class AboutService {
       project_name: "BlockData",
       featured: false,
       project_data: `An Ethereum Blockchain Dapp which allows storing data on the blockchain.`,
-      dependency: ["Next.js","Chart.js"],
-      web: "assfvsfdv",
+      dependency: ["Web3.js","Solidity","JavaScript"],
+      web: "#",
       github: "https://github.com/antonyjm462/BlockData",
       img: "assest/image/"
     },
@@ -158,8 +163,8 @@ export class AboutService {
       featured: false,
       project_data: `The Switch is a GoA project for the raspberry Pi which focus on controlling the raspberry Pi by google assistant using google actions.
       Uses a no server architecture also includes a facial detection implementation`,
-      dependency: ["Next.js","Chart.js"],
-      web: "assfvsfdv",
+      dependency: ["Django","Google Cloud Functions"],
+      web: "#",
       github: "https://github.com/antonyjm462/Switch",
       img: "assest/image/"
     },
@@ -167,8 +172,8 @@ export class AboutService {
       project_name: "LemonInk",
       featured: false,
       project_data: `Lemonink is a  developer group that I founded to solve problems we are facing in college. Site also contains a angular based flat file called Pocket DB which serves as a simple Database`,
-      dependency: ["Next.js","Chart.js"],
-      web: "assfvsfdv",
+      dependency: ["Angular","Chart.js"],
+      web: "#",
       github: "https://github.com/antonyjm462/Lemonink",
       img: "assest/image/"
     },
