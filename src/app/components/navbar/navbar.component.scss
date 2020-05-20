@@ -12,7 +12,17 @@
 
 .nav-link {
     font-family: $mono;
-    margin-left: 20px;
+    margin: 10px;
     font-size: medium;
     text-decoration: none;
+}
+
+.navbar-dark .navbar-brand {
+    background-image: url("../../../assets/icons/logo.svg");
+    width: 83px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
 }

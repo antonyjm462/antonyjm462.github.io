@@ -1,0 +1,19 @@
+#main {
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar-light .navbar-brand {
+  background-image: url("../../assets/img/logo.svg");
+  width: 83px;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+
+.links {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
