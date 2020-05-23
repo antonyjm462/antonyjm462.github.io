@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class AboutService {
-  imgVal: number = 1;
+  imgVal: boolean;
   
   public jobs: any[] = [
     {
@@ -32,6 +32,14 @@ export class AboutService {
       projects: [`https://github.com/antonyjm462/Machine-learning
       https://github.com/antonyjm462/Deep-Learning`],
       workdone: [ "Explored different Machine language and Deep Learning techniques for Hand Writing Recognition, Sentimental Analysis, Image Classifiers, Object Detection."]
+    },
+    {
+      organistion_name: "TCS ION",
+      role:"Data science Intern",
+      start_date:"May 2020",
+      end_date:"June 2020",
+      projects: [`https://github.com/antonyjm462/Emotion-Detection`],
+      workdone: [ "Automate detection of different emotions from textual comments and feedback "]
     },
   ];
 
@@ -93,7 +101,8 @@ export class AboutService {
       dependency: ["Firebase","Google Actions","DialogFlow","Google Cloud Functions"],
       web: "https://antonyjm462.github.io/LetzQuiz/",
       github: "https://github.com/antonyjm462/LetzQuiz",
-      img: "../../../assets/project-img/Libma/"
+      img: "../../../assets/project-img/LetzQuiz/",
+      last_no: 4
     },
     {
       project_name: "Fixel",
@@ -102,7 +111,8 @@ export class AboutService {
       dependency: ["Ionic","Django","Google Cloud Functions","Firebase","ProSR GAN"],
       web: "#",
       github: "https://github.com/antonyjm462/Fixel",
-      img: "../../../assets/project-img/Libma/"
+      img: "../../../assets/project-img/Fixel/",
+      last_no: 2
     },
     {
       project_name: "Libma",
@@ -119,7 +129,8 @@ export class AboutService {
       dependency: ["Ionic","Firebase","QR Code"],
       web: "https://libma-rset.firebaseapp.com/",
       github: "https://github.com/antonyjm462/Libma",
-      img: `../../../assets/project-img/Libma/`
+      img: `../../../assets/project-img/Libma/`,
+      last_no: 4
     },
     {
       project_name: "DoStuff",
@@ -137,7 +148,8 @@ export class AboutService {
       dependency: ["Angular","MySQL","PHP"],
       web: "#",
       github: "https://github.com/antonyjm462/DoStuff",
-      img: "../../../assets/project-img/Libma/"
+      img: "../../../assets/project-img/DoStuff/",
+      last_no: 9
     },
     {
       project_name: "Stockify",
@@ -200,6 +212,10 @@ export class AboutService {
       organisation:"Deeplearning.ai ",
     },
     {
+      name:"Introduction to Deep Learning & Neural Networks with Keras",
+      organisation:"IBM",
+    },
+    {
       name:"Machine Learning with Python: A Practical Introduction",
       organisation:"IBM",
     },
@@ -226,17 +242,35 @@ export class AboutService {
   ];
 
   public contact: string = "I'm currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!";
-  public imgValChanged: BehaviorSubject<number> = new BehaviorSubject<number>(this.imgVal);
+  // public imgValChanged: BehaviorSubject<number> = new BehaviorSubject<number>(this.imgVal);
+  public imgValChanged: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(this.imgVal);
 
   constructor() { 
-    this.imgVal = 0;
   }
 
+  // incImgVal(){
+  //   this.imgVal+= 1;
+  //   // if(this.imgVal == 5){
+  //   //   this.imgVal = 1;
+  //   // }
+  //   this.imgValChanged.next(this.imgVal);
+  // }
+
   incImgVal(){
-    this.imgVal+= 1;
-    if(this.imgVal == 5){
-      this.imgVal = 1;
-    }
+    this.imgVal = true;
     this.imgValChanged.next(this.imgVal);
+    this.imgVal = false;
+  }
+
+
+  get_last(project){
+    let last = 0;
+    for(let i=0;i<this.projects.length;i++){
+      if(this.projects[i].project_name == project.project_name){
+        last = this.projects[i].last_no;
+        break;
+      }
+    }
+    return last;
   }
 }

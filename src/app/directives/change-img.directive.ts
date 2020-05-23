@@ -15,20 +15,19 @@ export class ChangeImgDirective {
   //   this.about.incImgVal();
   // }
 
-  // @HostListener('mousedown', ['$event'])
-  // public onMousedown(event: any) :void{
-  //   console.log("mouse down");
-  //   this.about.incImgVal();
-  // }
+  @HostListener('mousedown', ['$event'])
+  public onMousedown(event: any) :void{
+    this.about.incImgVal();
+  }
 
   @HostListener('mouseover', ['$event'])
   public onMouseover(event: any) :void {
     this.about.incImgVal();
   }
 
-  // @HostListener('mouseout', ['$event']) 
-  // public mouseout(event: any) :void {
-  //   console.log("mouse out")
-  // }
+  @HostListener('mouseout', ['$event']) 
+  public mouseout(event: any) :void {
+    this.about.incImgVal();
+  }
 
 }

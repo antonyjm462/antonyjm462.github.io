@@ -11,13 +11,19 @@ export class ProjectFeaturedComponent {
 
   @Input() project;
   subscription: Subscription;
-  imgVal: number;
+  imgVal: number = 1;
   pngVal: string;
+  item: any;
   
   constructor(private about: AboutService) { 
     this.about.imgValChanged.subscribe(val => {
-      this.imgVal = val;
-      this.pngVal = `${this.imgVal}.png`
+      if(val && this.item){
+        this.imgVal+=1;
+        if(this.imgVal > this.about.get_last(this.item)){ 
+          this.imgVal = 1;
+        }
+      } 
+      this.pngVal = `${this.imgVal}.png`;
     });
     this.subscription = this.about.imgValChanged.subscribe();
   }
@@ -25,4 +31,9 @@ export class ProjectFeaturedComponent {
   ngOnDestroy(){
     this.subscription.unsubscribe();
   }
+
+  set_project(project){
+    this.item = project;
+  }
+
 }
