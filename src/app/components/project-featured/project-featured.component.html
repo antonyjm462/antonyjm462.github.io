@@ -1,41 +1,35 @@
-<div class="project-container">
-    <div class="row">
-        <div class="col-6 project-content">
-            <p class="featured row justify-content-end">Featured Project</p>
+<div class="project container">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 col-sm-12">
+            <p class="featured">Featured Project</p>
             {{set_project(project)}}
-            <div class="content-head row justify-content-end">
-                <h4>{{project.project_name}}</h4>
-            </div>
-            <div class="content-text row justify-content-end">
-                <p>{{project.project_data}}</p>
-            </div>
-            <ul class="content-footer row justify-content-end">
-                <li class="depend" *ngFor="let item of project.dependency">
+            <h4 class="content-head ">{{project.project_name}}</h4>
+            <p class="content-text ">{{project.project_data}}</p>
+            <ul class="content-footer row justify-content-end ">
+                <li class="depend " *ngFor="let item of project.dependency ">
                     {{item}}
                 </li>
             </ul>
-            <div class="row justify-content-end">
-                <div class="col-8">
-                </div>
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-6">
+            <div class="row justify-content-end align-items-center">
+                <div class="col-4 ">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-6 ">
                             <a href={{project.github}}>
-                                <div class="icon" aria-label="icon" [inlineSVG]="'../../../assets/icons/github-brands.svg'"></div>
+                                <div class="icon " aria-label="icon " [inlineSVG]=" '../../../assets/icons/github-brands.svg' "></div>
                             </a>
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 ">
                             <a href={{project.web}}>
-                                <div class="icon" aria-label="icon" [inlineSVG]="'../../../assets/icons/link-solid.svg'"></div>
+                                <div class="icon " aria-label="icon " [inlineSVG]=" '../../../assets/icons/link-solid.svg' "></div>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12 ">
             <div appChangeImg class="image-holder">
-                <img src="{{project.img + pngVal }}" />
+                <img src="{{project.img + pngVal }} " />
             </div>
         </div>
     </div>

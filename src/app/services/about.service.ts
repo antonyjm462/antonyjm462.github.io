@@ -81,10 +81,10 @@ export class AboutService {
       list:["Angular","Django","Ionic"]
     },
     tech:{
-      list:["Machine Learning","Deep learning",   "Blockchain",    "IOT",    "Web Development",    "UI Design"        ,"Ethical Hacking"]
+      list:["Machine Learning","Deep learning","Blockchain","IOT","Web Development","UI Design","Ethical Hacking"]
     }, 
     application: {
-      list:["Firebase", "Actions on Google", "Cloud Functions",    "Git",    "GitHub",    "Bootstrap"]
+      list:["Firebase","Actions on Google","Cloud Functions","Git","GitHub","Bootstrap"]
     },
   }
   public projects: any[] = [

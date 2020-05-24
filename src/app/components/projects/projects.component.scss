@@ -1,12 +1,33 @@
 //variables
 @import '../../../assets/scss/modules/variables';
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    position: relative;
-    gap: 25px;
+#featured,
+#projects {
+    width: 100%;
+}
+
+.projects {
+    height: 150vh;
+}
+
+.featured {
+    height: 300vh;
 }
 
 h3::after {
     margin-left: 420px;
+}
+
+@media only screen and (max-width: 700px) {
+    #featured,
+    #projects {
+        font-size: 0.7rem;
+    }
+    .projects {
+        height: 250vh;
+        font-size: 0.7rem;
+    }
+    .featured {
+        height: 420vh;
+        font-size: 0.7rem;
+    }
 }

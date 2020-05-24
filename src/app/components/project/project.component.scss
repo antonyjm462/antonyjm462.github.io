@@ -58,3 +58,54 @@ li {
     color: $lightSlate;
     margin: 0px 0px 15px;
 }
+
+@media only screen and (max-width: 700px) {
+    .project-container {
+        font-size: 0.7rem;
+        background-color: $lightNavy;
+        height: 350px;
+        width: 320px;
+    }
+    ul {
+        display: flex;
+        align-items: flex-end;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        padding: 0px;
+        list-style: none;
+    }
+    li {
+        font-size: 0.7rem;
+        color: $lightSlate;
+        line-height: 1.75;
+        margin-right: 15px;
+    }
+    .folder-icon {
+        color: $green;
+        height: 80px;
+        width: 60px;
+    }
+    .icon {
+        color: $slate;
+        height: 25px;
+        width: 25px;
+        position: relative;
+    }
+    .icon:hover {
+        color: $green;
+    }
+    .content-head {
+        font-size: 1rem;
+        color: $lightestSlate;
+        font-weight: $bold;
+    }
+    .content-text,
+    .content-footer {
+        box-sizing: border-box;
+        word-wrap: break-word;
+        font-family: $mono;
+        font-size: small;
+        color: $lightSlate;
+    }
+}

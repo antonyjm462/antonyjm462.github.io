@@ -1,19 +1,21 @@
 <section id="accomplishments">
     <div class="container">
-        <div class="certification row justify-content-center">
-            <h3>Accomplishments</h3>
-            <table id="certificate" class="darkTable">
-                <tr>
-                    <th>#</th>
-                    <th>Certificate</th>
-                    <th>Issueing Organisation</th>
-                </tr>
-                <tr *ngFor="let item of items; index as i;">
-                    <td>{{i}}</td>
-                    <td>{{item.name}}</td>
-                    <td>{{item.organisation}}</td>
-                </tr>
-            </table>
+        <div class="row justify-content-center align-items-center content">
+            <div class="col col-12 certification">
+                <h3>Accomplishments</h3>
+                <table id="certificate" class="darkTable">
+                    <tr>
+                        <th>#</th>
+                        <th>Certificate</th>
+                        <th>Issueing Organisation</th>
+                    </tr>
+                    <tr *ngFor="let item of items; index as i;">
+                        <td>{{i}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.organisation}}</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </section>

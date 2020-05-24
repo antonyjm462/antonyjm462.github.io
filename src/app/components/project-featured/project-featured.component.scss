@@ -1,7 +1,5 @@
 //variables
 @import '../../../assets/scss/modules/variables';
-.project-container {}
-
 .image-holder {
     height: 350px;
     width: 600px;
@@ -97,4 +95,94 @@ li {
     font-size: small;
     font-family: $mono;
     color: $green;
+    text-align: right;
+}
+
+@media only screen and (max-width: 700px) {
+    .project {
+        width: 320px;
+    }
+    .image-holder {
+        height: 200px;
+        width: 320px;
+        position: relative;
+        margin: 0px;
+        margin-left: -14px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    button {
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+    }
+    .content-text,
+    .content-footer,
+    .content-head {
+        text-align: center;
+    }
+    img {
+        border-radius: 10px;
+        height: 200px;
+        width: 320px;
+    }
+    .image-holder:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 255, 255, 0.466);
+        transition: all .3s linear;
+        border-radius: 10px;
+    }
+    .image-holder:hover:before {
+        background: none;
+    }
+    .icon {
+        color: $slate;
+        height: 25px;
+        width: 25px;
+    }
+    .icon:hover {
+        color: $green;
+    }
+    .content-head {
+        font-size: 1rem;
+        color: $lightestSlate;
+        font-weight: $bold;
+    }
+    .content-text,
+    .content-footer {
+        box-sizing: border-box;
+        word-wrap: break-word;
+        font-family: $mono;
+        font-size: 1rem;
+        color: $lightSlate;
+    }
+    ul {
+        display: flex;
+        align-items: flex-end;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        padding: 0px;
+        list-style: none;
+    }
+    li {
+        font-size: 0.7rem;
+        color: $lightSlate;
+        line-height: 1.75;
+    }
+    .featured {
+        font-size: 0.6rem;
+        font-family: $mono;
+        color: $green;
+        text-align: center;
+    }
 }

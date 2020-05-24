@@ -1,11 +1,17 @@
 //variables
 @import '../../../assets/scss/modules/variables';
-.container-fluid {
-    margin-top: 50px;
+.about {
+    width: 100%;
+    height: 100vh;
 }
 
-.about-content {
-    padding: 10px 170px;
+.WorkDescription {
+    height: 100vh;
+    width: 100%;
+}
+
+.skill {
+    width: 100%;
 }
 
 //tint
@@ -34,10 +40,6 @@ img {
 
 .image-holder:hover:before {
     background: none;
-}
-
-.Work {
-    padding-bottom: 70px;
 }
 
 ul {
@@ -91,6 +93,22 @@ h2 {
     color: $slate;
 }
 
-.skill-set {
-    padding: 20px;
+@media only screen and (max-width: 700px) {
+    .about {
+        height: 900px;
+    }
+    .WorkDescription {
+        height: 130vh;
+    }
+    .skill {
+        height: 400vh;
+    }
+    canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    h2 {
+        padding: 25px;
+    }
 }
