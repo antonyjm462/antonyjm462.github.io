@@ -62,7 +62,7 @@ export class AboutService {
 
   public skills: any = {
     language:{
-      list:["Python","C","Java","JavaScript","TypeScript","PHP","Ruby","HTML","CSS","SCSS"],
+      list:["Python","C","java","JavaScript","TypeScript","PHP","ruby","HTML","CSS","SCSS"],
       list_data:["Python","C","Java","JavaScript","TypeScript","PHP","Ruby","HTML","CSS","SCSS"],
       data:[
         {data: [40,0,0,0,0,50,40,40,0,0], label: '2017'},
@@ -72,7 +72,7 @@ export class AboutService {
       ]
     },
     database:{
-      list:["MySql","MongoDB","OracleDB"]
+      list:["MySql","mongoDB","OracleDB"]
     },
     os:{
       list:["Windows","Linux"]
