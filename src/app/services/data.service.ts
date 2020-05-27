@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
 
+  fileContent: string = '';
+
   constructor() { }
 
   public color: any = {
@@ -33,35 +35,29 @@ export class DataService {
     BgWhite : "\x1b[47m%s\x1b[0m",
     };
 
-    public dev:string = `
-    -oooooooo/-      .+ooooooooo:  +ooo+        oooo/
-+MMMMMMMMMMm+   -NMMMMMMMMMMs  +MMMM:      /MMMM/
-+MMMNyyydMMMMy  /MMMMyyyyyyy/   mMMMd      mMMMd
-+MMMm    :MMMM. /MMMN           /MMMM/    /MMMM:
-+MMMm    .MMMM- /MMMN            dMMMm    mMMMh
-+MMMm    .MMMM- /MMMMyyyy+       :MMMM/  +MMMM-
-+MMMm    .MMMM- /MMMMMMMMy        hMMMm  NMMMy
-+MMMm    .MMMM- /MMMMoooo:        -MMMM+oMMMM-
-+MMMm    .MMMM- /MMMN              yMMMmNMMMy
-+MMMm    +MMMM. /MMMN              .MMMMMMMM.
-+MMMMdddNMMMMo  /MMMMddddddd+       sMMMMMMs
-+MMMMMMMMMNh:   .mMMMMMMMMMMs        yMMMMs
-.///////:-        -/////////-         .::.
-`;
 
-  public hello: string = `         
-+MMMMMMMMMMMMMMMMMM\\    /MMMMMMMMMMMMMMMMM+
-+MMMMMMMMMMMMMMM    \\  /    /MMMMMMMMMMMMM+
-+MMMM           \\    \\     /          MMMM+
-+MMMM            \\    \\   /           MMMM+
-+MMMM             \\    \\              MMMM+
-+MMMM            / \\    \\             MMMM+
-+MMMM           /   \\    \\            MMMM+
-+MMMM          /     \\    \\           MMMM+
-+MMMM         /    /  \\    \\          MMMM+
-+MMMMMMMMMMMMM    /    \\    \\MMMMMMMMMMMMM+
-+MMMMMMMMMMMMMMMM/      \\MMMMMMMMMMMMMMMMM+
-  
+  public hello: string = `
+
+  >>>>>>>>>>>>>>>>>>>>>>>>>i'                  >>>>>>>>>>>>>>>>>>>>>>>>>
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>^              ,i.^>>>>>>>>>>>>>>>>>>>>>>>>
+  >>>>;'''''''''''''''''' !>>>,            ;>>! '''''''''''''''''''I>>>>
+  >>>>,                    I>>>;         .l>>>I                    ;>>>>
+  >>>>,                     :>>>l.      'i>>>,                     ;>>>>
+  >>>>,                      ">>>i'     >>>>^                      ;>>>>
+  >>>>,                        >>>>^  ">>>i'                       ;>>>>
+  >>>>,                        'i>>>,  i>!.                        ;>>>>
+  >>>>,                         .l>>>; .:                          ;>>>>
+  >>>>,                           I>>>l.                           ;>>>>
+  >>>>,                            :>>>i'                          ;>>>>
+  >>>>,                         ^>" ^>>>>                          ;>>>>
+  >>>>,                        :>>>,  i>>>"                        ;>>>>
+  >>>>,                       ;>>>l.  .!>>>;                       ;>>>>
+  >>>>,                     .l>>>;      l>>>l                      ;>>>>
+  >>>>,                    'i>>>,        ;>>>!'                    ;>>>>
+  >>>>,                    >>>>^          ,>>>i                    ;>>>>
+  >>>>!;;;;;;;;;;;;;;;;;;;>>>i'            ^>>>> .;;;;;;;;;;;;;;;;;!>>>>
+  >>>>>>>>>>>>>>>>>>>>>>>>>>!.              'i>^ l>>>>>>>>>>>>>>>>>>>>>>
+
 Hey there! Interested in the code behind? Well, you're in luck - we're open source!
 Come say hi, tell us what you're debugging, or even lend a hand in our repo: https://github.com/antonyjm462/Portfolio
 `;

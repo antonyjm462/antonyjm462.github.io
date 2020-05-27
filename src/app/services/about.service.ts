@@ -62,13 +62,13 @@ export class AboutService {
 
   public skills: any = {
     language:{
-      list:["Python","C","JavaScript","TypeScript","Java","HTML","CSS","PHP","Ruby"],
-      list_data:["Python","C","JavaScript","TypeScript","Java","HTML","CSS","PHP","Ruby"],
+      list:["Python","C","Java","JavaScript","TypeScript","PHP","Ruby","HTML","CSS","SCSS"],
+      list_data:["Python","C","Java","JavaScript","TypeScript","PHP","Ruby","HTML","CSS","SCSS"],
       data:[
-        {data: [40,0,0,0,0,50,40,40,0], label: '2017'},
-        {data: [80,60,0,0,40,60,60,60,0], label: '2018'},
-        {data: [80,80,40,40,50,70,50,60,0], label: '2019'},
-        {data: [90,80,60,80,80,80,80,60,50], label: '2020'}
+        {data: [40,0,0,0,0,50,40,40,0,0], label: '2017'},
+        {data: [80,60,0,0,40,60,60,60,0,0], label: '2018'},
+        {data: [80,80,40,40,50,70,50,60,0,0], label: '2019'},
+        {data: [90,80,60,80,80,80,80,60,50,30], label: '2020'}
       ]
     },
     database:{
@@ -78,7 +78,7 @@ export class AboutService {
       list:["Windows","Linux"]
     },
     framework:{
-      list:["Angular","Django","Ionic"]
+      list:["Angular","Django","Ionic","Gatsby"]
     },
     tech:{
       list:["Machine Learning","Deep learning","Blockchain","IOT","Web Development","UI Design","Ethical Hacking"]

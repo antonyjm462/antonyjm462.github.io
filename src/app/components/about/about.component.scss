@@ -95,13 +95,16 @@ h2 {
 
 @media only screen and (max-width: 700px) {
     .about {
-        height: 900px;
+        height: 1000px;
     }
     .WorkDescription {
-        height: 130vh;
+        height: 500px;
+    }
+    .chart {
+        display: none;
     }
     .skill {
-        height: 400vh;
+        height: 2600px;
     }
     canvas {
         display: block;
