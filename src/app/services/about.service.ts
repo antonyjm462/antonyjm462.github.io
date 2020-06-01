@@ -10,7 +10,7 @@ export class AboutService {
   public jobs: any[] = [
     {
       organistion_name: "Wiinnova Software Labs",
-      role:"Software Developer Intern",
+      role: "Software Developer Intern",
       start_date:"August 2019",
       end_date:"September 2019",
       projects: [`Todo-TaskManager - A tool for dividing and tracking projects in a company, which uses Slack Api for Slack integration and Authentication. Front-End using Angular and Database using Firebase.  Made PHP REST API for interfacing the Mysql database.https://github.com/antonyjm462/todotaskmanager`],
@@ -21,7 +21,7 @@ export class AboutService {
       role:"Software Developer Intern",
       start_date:"July 2019",
       end_date:"July 2019",
-      projects: [`Minitacts -  A contact listing App for saving important contacts, which include login through email, Google account and also implemented a forgot password using the link sent to email. Front end using Angular and implemented a realtime database in Firebase.Styled the front end using Bootstrap https://github.com/antonyjm462/Minitacts`],
+      projects: [`Minitacts -  A contact listing App for saving important contacts, which include login through email, Google account, and also implemented a forgot password using the link sent to email. Front end using Angular and implemented a realtime database in Firebase. Styled the front end using Bootstrap https://github.com/antonyjm462/Minitacts`],
       workdone: [ "This assignment was to build a contact look tool for ZineMind. It is built on top of the Angular Progressive Web Application model."]
     },
     {
@@ -43,9 +43,9 @@ export class AboutService {
     },
   ];
 
-  public intro: string = `I'm a software engineer based in India, Kerala specializing in building (and occasionally designing) exceptional Cross Platform applications,Google Action applications, and everything in between. also intrested in Ethical Hacking, Blockchain, Artifical Intelligence.`;
+  public intro: string = `I'm a software engineer based in India, Kerala specializing in developing (and occasionally designing) exceptional Cross-Platform applications, Google Action applications, and everything in between. also interested in Ethical Hacking, Blockchain, Artificial Intelligence.`;
 
-  public about_me: string = `Hello! I'm Antony J Malakkaran, a software engineer based in Kochi, Kerala.Meticulous and Motivated induvidual working towards a Bachelor of Technology in Computer Science and Engineering at Rajagiri School of Engineering and Technology. Dynamic and Creative software engineer with a strong background in Python, C , Java and Javascript with Previous 3 internship experience in Web-Development and Data Science.I have Solid live project experience on Google Home Application development.I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide perfect, performant experiences.I work on a wide variety of interesting and meaningful projects on a daily basis.`;
+  public about_me: string = `Hello! I'm Antony J Malakkaran, a software engineer based in Kochi, Kerala.Meticulous and Motivated individual working towards a Bachelor of Technology in Computer Science and Engineering at Rajagiri School of Engineering and Technology. Dynamic and Creative software engineer with a strong background in Python, C, Java, and Javascript with Previous 3 internship experience in Web-Development and Data Science. I have Solid live project experience on Google Home Application development. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide perfect, performant experiences. I work on a wide variety of interesting and meaningful projects on a daily basis.`;
 
   public headline: string = `I Create Useful Applications For Web`;
 
@@ -92,8 +92,7 @@ export class AboutService {
       project_name: "LetzQuiz",
       featured: true,
       project_data: `Quizmaster is a voice-assisted application for Amazon
-      Alexa and Google Home (Nest). This app can also be
-      used on a mobile phone running Android and iOS.  
+      Alexa and Google Home (Nest). This app can also be used on a mobile phone running Android and iOS.  
       This project comprises 3 main components. 
           * Quiz Questions Database 
           * User management 
