@@ -6,6 +6,8 @@
 @import 'assets/scss/modules/_spinner.scss';
 //variables
 @import "assets/scss/modules/_variables.scss";
+//animations 
+@import "assets/scss/modules/_animation.scss";
 body {
     background-color: $DARK_BG;
     margin: 0;

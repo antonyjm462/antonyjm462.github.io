@@ -101,7 +101,8 @@ export class AboutService {
       web: "https://antonyjm462.github.io/LetzQuiz/",
       github: "https://github.com/antonyjm462/LetzQuiz",
       img: "../../../assets/project-img/LetzQuiz/",
-      last_no: 4
+      last_no: 4,
+      first_no: 0
     },
     {
       project_name: "Fixel",
@@ -111,7 +112,8 @@ export class AboutService {
       web: "#",
       github: "https://github.com/antonyjm462/Fixel",
       img: "../../../assets/project-img/Fixel/",
-      last_no: 2
+      last_no: 2,
+      first_no: 0
     },
     {
       project_name: "Libma",
@@ -129,7 +131,8 @@ export class AboutService {
       web: "https://libma-rset.firebaseapp.com/",
       github: "https://github.com/antonyjm462/Libma",
       img: `../../../assets/project-img/Libma/`,
-      last_no: 4
+      last_no: 4,
+      first_no: 0
     },
     {
       project_name: "DoStuff",
@@ -147,8 +150,9 @@ export class AboutService {
       dependency: ["Angular","MySQL","PHP"],
       web: "#",
       github: "https://github.com/antonyjm462/DoStuff",
-      img: "../../../assets/project-img/DoStuff/",
-      last_no: 9
+      img: "../../../assets/project-img/DOStuff/",
+      last_no: 9,
+      first_no: 2
     },
     {
       project_name: "Stockify",
@@ -272,4 +276,5 @@ export class AboutService {
     }
     return last;
   }
+
 }
