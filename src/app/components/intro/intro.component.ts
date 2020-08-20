@@ -12,9 +12,9 @@ export class IntroComponent implements OnInit {
   headline: string;
 
   constructor(private about: AboutService,private data:DataService) { 
-    console.log(data.color.FgRed,data.hello);
     this.intro = about.intro;
     this.headline = about.headline;
+    console.log(data.hello);
   }
 
   ngOnInit() {

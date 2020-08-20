@@ -9,6 +9,14 @@ export class AboutService {
   
   public jobs: any[] = [
     {
+      organistion_name: "TCS ION",
+      role:"Data science Intern",
+      start_date:"May 2020",
+      end_date:"June 2020",
+      projects: [`https://github.com/antonyjm462/Emotion-Detection`],
+      workdone: [ "Automate detection of different emotions from textual comments and feedback "]
+    },
+    {
       organistion_name: "Wiinnova Software Labs",
       role: "Software Developer Intern",
       start_date:"August 2019",
@@ -32,14 +40,6 @@ export class AboutService {
       projects: [`https://github.com/antonyjm462/Machine-learning
       https://github.com/antonyjm462/Deep-Learning`],
       workdone: [ "Explored different Machine language and Deep Learning techniques for Hand Writing Recognition, Sentimental Analysis, Image Classifiers, Object Detection."]
-    },
-    {
-      organistion_name: "TCS ION",
-      role:"Data science Intern",
-      start_date:"May 2020",
-      end_date:"June 2020",
-      projects: [`https://github.com/antonyjm462/Emotion-Detection`],
-      workdone: [ "Automate detection of different emotions from textual comments and feedback "]
     },
   ];
 

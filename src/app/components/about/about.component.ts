@@ -69,7 +69,6 @@ export class AboutComponent implements OnInit {
     this.framework = this.makepath(this.about.skills["framework"].list);
     this.tech = this.about.skills["tech"].list;
     this.application = this.makepath(this.about.skills["application"].list);
-    console.log(this.radarChartLabels);
   }
 
   makepath(data){

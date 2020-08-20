@@ -9,11 +9,10 @@ export class ChangeImgDirective {
   constructor(private about: AboutService,public elementRef: ElementRef,
     private renderer: Renderer) { }
 
-  // @HostListener('click', ['$event'])
-  // public onClick(event: any) :void{
-  //   console.log("mouse clicked");
-  //   this.about.incImgVal();
-  // }
+  @HostListener('click', ['$event'])
+  public onClick(event: any) :void{
+    this.about.incImgVal();
+  }
 
   @HostListener('mousedown', ['$event'])
   public onMousedown(event: any) :void{

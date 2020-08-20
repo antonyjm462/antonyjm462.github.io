@@ -23,6 +23,7 @@ import { ProjectComponent } from './components/project/project.component';
 import { ProjectFeaturedComponent } from './components/project-featured/project-featured.component';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 import { ChangeImgDirective } from './directives/change-img.directive';
+import { LoadingCircleComponent } from './components/loading-circle/loading-circle.component';
 
 const COMPONENTS = [
   AppComponent,
@@ -41,7 +42,8 @@ const COMPONENTS = [
   LoadingScreenComponent, 
   ViewerComponent,
   JobComponent,
-  ScrollToTopComponent
+  ScrollToTopComponent,
+  LoadingCircleComponent
 ];
 
 const PIPES = [];
