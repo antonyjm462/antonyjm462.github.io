@@ -8,8 +8,8 @@ export class StopParentDirective {
 
   constructor() { }
 
-  @HostListener('click', ['$event'])
-  @HostListener('mousedown', ['$event'])
+  @HostListener('click')
+  @HostListener('mousedown')
   public onClick(event: any) :void{
     event.stopPropagation();
   }
