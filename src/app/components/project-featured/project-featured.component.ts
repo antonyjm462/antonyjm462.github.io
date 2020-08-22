@@ -14,6 +14,7 @@ export class ProjectFeaturedComponent {
   imgVal: number = 1;
   pngVal: string;
   item: any;
+  indexes: any;
   
   constructor(private about: AboutService) { 
     this.about.imgValChanged.subscribe(val => {
@@ -34,6 +35,7 @@ export class ProjectFeaturedComponent {
 
   set_project(project){
     this.item = project;
+    this.indexes = this.item.index;
   }
 
 }

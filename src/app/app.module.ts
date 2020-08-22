@@ -24,6 +24,7 @@ import { ProjectFeaturedComponent } from './components/project-featured/project-
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 import { ChangeImgDirective } from './directives/change-img.directive';
 import { LoadingCircleComponent } from './components/loading-circle/loading-circle.component';
+import { StopParentDirective } from './directives/stop-parent.directive';
 
 const COMPONENTS = [
   AppComponent,
@@ -61,6 +62,7 @@ const MODULES = [
 
 const DIRECTIVES = [
   ChangeImgDirective,
+  StopParentDirective
 ]
 @NgModule({
   declarations: [...COMPONENTS, ...PIPES, ...SERVICES,...DIRECTIVES],

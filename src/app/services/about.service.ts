@@ -100,9 +100,10 @@ export class AboutService {
       dependency: ["Firebase","Google Actions","DialogFlow","Google Cloud Functions"],
       web: "https://antonyjm462.github.io/LetzQuiz/",
       github: "https://github.com/antonyjm462/LetzQuiz",
-      img: "../../../assets/project-img/LetzQuiz/",
+      img: "../../../assets/project-img/LETZQUIZ/",
       last_no: 4,
-      first_no: 0
+      first_no: 0,
+      index:[1,2,3,4]
     },
     {
       project_name: "Fixel",
@@ -111,9 +112,10 @@ export class AboutService {
       dependency: ["Ionic","Django","Google Cloud Functions","Firebase","ProSR GAN"],
       web: "#",
       github: "https://github.com/antonyjm462/Fixel",
-      img: "../../../assets/project-img/Fixel/",
+      img: "../../../assets/project-img/FIXEL/",
       last_no: 2,
-      first_no: 0
+      first_no: 0,
+      index:[1,2]
     },
     {
       project_name: "Libma",
@@ -130,9 +132,10 @@ export class AboutService {
       dependency: ["Ionic","Firebase","QR Code"],
       web: "https://libma-rset.firebaseapp.com/",
       github: "https://github.com/antonyjm462/Libma",
-      img: `../../../assets/project-img/Libma/`,
+      img: `../../../assets/project-img/LIBMA/`,
       last_no: 4,
-      first_no: 0
+      first_no: 0,
+      index:[1,2,3,4]
     },
     {
       project_name: "DoStuff",
@@ -150,9 +153,10 @@ export class AboutService {
       dependency: ["Angular","MySQL","PHP"],
       web: "#",
       github: "https://github.com/antonyjm462/DoStuff",
-      img: "../../../assets/project-img/DOStuff/",
+      img: "../../../assets/project-img/DOSTUFF/",
       last_no: 9,
-      first_no: 2
+      first_no: 2,
+      index:[1,2,3,4,5,6,7,8,9]
     },
     {
       project_name: "Stockify",

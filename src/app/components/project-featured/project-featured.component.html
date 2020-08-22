@@ -28,8 +28,28 @@
             </div>
         </div>
         <div class="col-md-6 col-sm-12 ">
-            <div appChangeImg class="image-holder">
+            <!-- <div appChangeImg class="image-holder noselect" draggable="false">
                 <img src="{{project.img + pngVal }} " />
+            </div> -->
+            <div id="{{project.project_name}}" class="image-holder carousel slide" data-ride="carousel">
+                <ol id="indicator" class="carousel-indicators">
+                    <div *ngFor="let index of indexes; index as i; first as isFirst">
+                        <li attr.data-target="#{{project.project_name}}" attr.data-slide-to="{{index}}" [ngClass]="{'active': isFirst}"></li>
+                    </div>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item" [ngClass]="{'active': isFirst}" *ngFor="let index of indexes; index as i; first as isFirst">
+                        <img src="{{item.img + index + '.png'}}" attr.class="d-block w-100" [ngClass]="{'active': isFirst}">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#{{project.project_name}}" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#{{project.project_name}}" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </div>
