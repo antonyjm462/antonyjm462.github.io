@@ -13,24 +13,37 @@ export class AboutService {
       role:"Data science Intern",
       start_date:"May 2020",
       end_date:"June 2020",
-      projects: [`https://github.com/antonyjm462/Emotion-Detection`],
-      workdone: [ "Automate detection of different emotions from textual comments and feedback "]
+      projects: [`EmotAI: A Machine Learning-based Emotion Classifying
+      Web App, in which emotion are classified into Happy, Sad,
+      Fear, Anger, Bad, Surprise, Disgust from a collection of
+      English text, sentences or large paragraph, which also
+      handle abbreviations.`,`github.com/antonyjm462/EmotAI `,`Front-End: HTML,CSS,BootStrap`,`Back-End: Python`,`FrameWork: Flask`],
+      workdone: [ "Built a system that automates the detection of different emotions from textual comments and feedback"]
     },
     {
       organistion_name: "Wiinnova Software Labs",
       role: "Software Developer Intern",
       start_date:"August 2019",
       end_date:"September 2019",
-      projects: [`Todo-TaskManager - A tool for dividing and tracking projects in a company, which uses Slack Api for Slack integration and Authentication. Front-End using Angular and Database using Firebase.  Made PHP REST API for interfacing the Mysql database.https://github.com/antonyjm462/todotaskmanager`],
-      workdone: [ "This assignment was to build a new tool for Winnova's software project-execution team. This tool allows employees to keep track of the project progress."]
+      projects: [`Todo (TaskManager): A tool for dividing and tracking
+      projects in a company, which uses Slack API for Slack
+      integration and Authentication and PHP REST API for
+      interfacing the MySQL database.`,`github.com/antonyjm462/todotaskmanager`,
+      `Front-End: Angular`,`Back-End: TypeScript`,`Database: Firebase, MySQL`],
+      workdone: [ `Built a new tool for the Winnova software project-execution
+      team which allows keeping track of the project progress`,`
+      Tested company's product FEEDBACQ`]
     },
     {
       organistion_name: "ZineMind Technology",
       role:"Software Developer Intern",
       start_date:"July 2019",
       end_date:"July 2019",
-      projects: [`Minitacts -  A contact listing App for saving important contacts, which include login through email, Google account, and also implemented a forgot password using the link sent to email. Front end using Angular and implemented a realtime database in Firebase. Styled the front end using Bootstrap https://github.com/antonyjm462/Minitacts`],
-      workdone: [ "This assignment was to build a contact look tool for ZineMind. It is built on top of the Angular Progressive Web Application model."]
+      projects: [`Minitacts: A contact listing web app for saving important
+      contacts, which include authentication through Gmail,
+      Google account.`,`github.com/antonyjm462/Minitacts`,`Front-end: Angular, Bootstrap, Angular Material`,
+      `Back-end: TypeScript`,`Database: Firebase.`],
+      workdone: [ "Built a contact look tool for ZineMind. It is built on top of the Angular Progressive Web Application model."]
     },
     {
       organistion_name: "Pace Lab",
@@ -39,7 +52,9 @@ export class AboutService {
       end_date:"July 2019",
       projects: [`https://github.com/antonyjm462/Machine-learning
       https://github.com/antonyjm462/Deep-Learning`],
-      workdone: [ "Explored different Machine language and Deep Learning techniques for Hand Writing Recognition, Sentimental Analysis, Image Classifiers, Object Detection."]
+      workdone: [ `Explored different Machine language and Deep Learning
+      techniques for Hand Writing Recognition,
+      Sentimental Analysis, Image Classifiers, Object Detection.`]
     },
   ];
 
@@ -57,6 +72,7 @@ export class AboutService {
     `⚡ Creating Backend With Python Django FrameWork`,
     `⚡ Solid live project experience on Google Home Application development`,
     `⚡ Experienced in making ML and DL Models`,
+    `⚡ Experienced in developing application using MEAN stack`,
   ]
 
 
@@ -159,41 +175,48 @@ export class AboutService {
       index:[1,2,3,4,5,6,7,8,9]
     },
     {
-      project_name: "Stockify",
-      featured: false,
-      project_data: `A Machine Learning Web Application for Smart Stock Purchase and Provide a dashboard for each user to save his preferences. Built using Django
-      Framework, Database used in SQLite`,
-      dependency: ["Django","Chart.js","Keras"],
-      web: "#",
-      github: "https://github.com/antonyjm462/stockify",
-      img: "assest/image/"
-    },
-    {
-      project_name: "BlockData",
-      featured: false,
-      project_data: `An Ethereum Blockchain Dapp which allows storing data on the blockchain.`,
-      dependency: ["Web3.js","Solidity","JavaScript"],
-      web: "#",
-      github: "https://github.com/antonyjm462/BlockData",
-      img: "assest/image/"
-    },
-    {
-      project_name: "Switch",
-      featured: false,
-      project_data: `The Switch is a GoA project for the raspberry Pi which focus on controlling the raspberry Pi by google assistant using google actions.
-      Uses a no server architecture also includes a facial detection implementation`,
-      dependency: ["Django","Google Cloud Functions"],
-      web: "#",
-      github: "https://github.com/antonyjm462/Switch",
-      img: "assest/image/"
-    },
-    {
       project_name: "LemonInk",
       featured: false,
-      project_data: `Lemonink is a  developer group that I founded to solve problems we are facing in college. Site also contains a angular based flat file called Pocket DB which serves as a simple Database`,
-      dependency: ["Angular","Chart.js"],
-      web: "#",
+      project_data: `Lemonink is a developer group that I founded to solve
+      problems students are facing in college by making
+      applications, along with that help young aspiring
+      developers to master new tools and technologies.
+      https://lemon-ink.web.app`,
+      dependency: ["Angular","Chart.js","Email.js"],
+      web: "https://lemon-ink.web.app",
       github: "https://github.com/antonyjm462/Lemonink",
+      img: "assest/image/"
+    },
+    {
+      project_name: "p5js-Angular",
+      featured: false,
+      project_data: `This project contains all my P5js projects including Snake game and endless Map
+      https://graphic-96d64.firebaseapp.com`,
+      dependency: ["Angular","P5.js"],
+      web: "https://graphic-96d64.firebaseapp.com",
+      github: "https://github.com/antonyjm462/p5js-Angular",
+      img: "assest/image/"
+    },
+    {
+      project_name: "PocketDB",
+      featured: false,
+      project_data: `PocketDB is a Django project which contains Api for CRUD functions in Sqlite Database `,
+      dependency: ["Django","Sqlite3"],
+      web: "#",
+      github: "https://github.com/antonyjm462/PocketDB",
+      img: "assest/image/"
+    },
+    {
+      project_name: "EmotAI",
+      featured: false,
+      project_data: `A Machine Learning-based Emotion Classifying
+      Web App, in which emotion are classified into Happy, Sad,
+      Fear, Anger, Bad, Surprise, Disgust from a collection of
+      English text, sentences or large paragraph, which also
+      handle abbreviations.`,
+      dependency: ["Flask","Keras"],
+      web: "antonyj.pythonanywhere.com/",
+      github: "github.com/antonyjm462/EmotAI",
       img: "assest/image/"
     },
   ];
@@ -233,6 +256,10 @@ export class AboutService {
     {
       name:"Basics of Scrum, Agile and Project Delivery.",
       organisation:"Udemy",
+    },
+    {
+      name:"Introduction to MongoDB",
+      organisation:"MongoDB Inc",
     },
     {
       name:"Angular 9 Masterclass with TypeScript, Firebase & Material",
